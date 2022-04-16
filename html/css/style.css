@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@100&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.form_title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    margin-top: 50px;
+    text-align: center;
+    color: #170F49;
+}
+
+.form_subtitle{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 12px;
+    text-align: center;
+    color: #6F6C90;
+}
+.step_title{
+  margin-top: 30px;
+  text-align: left;
+  font-weight: 700;
+  color: #170F49;
+  margin-left: 60px;
+}
+.step_title p{
+  margin-top: 8px;
+}
+
+.myform{
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  height: auto;
+  border: 1px solid #EFF0F7;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+  border-radius: 34px;
+}
+
+.myform input{
+  border-radius: 0px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+.myform input:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+input:focus + label, input:not([value=""]) + label{
+  font-size: 12px;
+  color: #170F49;
+}
