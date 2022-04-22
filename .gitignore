@@ -84,6 +84,7 @@ target/
 *.pyc
 __pycache__/
 settings.py
+easy_form/easy_form/settings.py
 
 .env
 db.sqlite3
