@@ -12,3 +12,7 @@ def index(request):
     form = MyFormForm()
     context = {'form' : form}
     return render(request, 'form.html', context)
+
+def output(request):
+    form_data = MyForm.objects
+    return render(request, 'output.html', {'form_data': form_data})
