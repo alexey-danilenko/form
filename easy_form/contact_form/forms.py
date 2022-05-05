@@ -1,10 +1,16 @@
 from .models import MyForm
 from django.forms import ModelForm, TextInput, EmailInput
+from snowpenguin.django.recaptcha3.fields import ReCaptchaField
+
 
 class MyFormForm (ModelForm):
+    captcha = ReCaptchaField(score_threshold=0.5)
+
     class Meta:
         model = MyForm
-        fields = ['first_name', 'last_name', 'phone', 'email']
+        
+
+        fields = ['first_name', 'last_name', 'phone', 'email', 'captcha']
 
         widgets = {
             'first_name' : TextInput(attrs={
